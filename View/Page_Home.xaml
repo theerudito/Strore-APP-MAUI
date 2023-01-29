@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Heaven.View.Page_Home"
+             Title="Page_Home">
+    <ScrollView>
+
+
+        <StackLayout >
+
+            <Label
+                Margin="10"
+                Text="ADD CLIENT"
+                HorizontalOptions="Center"/>
+
+            <Frame
+                HasShadow="True"
+                BackgroundColor="AliceBlue"
+                IsClippedToBounds="True"
+                Grid.Row="0"
+                Grid.Column="2"
+                Margin="20,10,20,0"
+                HeightRequest="40"
+                CornerRadius="10">
+                <Entry
+                    Text="{Binding DNI}"
+                    Keyboard="Numeric"
+                    Placeholder="CI"
+                    HeightRequest="30"
+                    TextColor="ForestGreen"
+                    Margin="0,-20,0,0"
+                    />
+            </Frame>
+
+            <Frame
+                HasShadow="True"
+                BackgroundColor="AliceBlue"
+                IsClippedToBounds="True"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="20,0,20,0"
+                HeightRequest="40"
+                CornerRadius="10">
+                <Entry
+                    Text="{Binding FirstName}"
+                    Keyboard="Text"
+                    Placeholder="FirstName"
+                    HeightRequest="30"
+                    TextColor="ForestGreen"
+                    Margin="0,-20,0,0"
+                    />
+            </Frame>
+
+            <Frame
+                HasShadow="True"
+                BackgroundColor="AliceBlue"
+                IsClippedToBounds="True"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="20,0,20,0"
+                HeightRequest="40"
+                CornerRadius="10">
+                <Entry
+                    Text="{Binding LastName}"
+                    Keyboard="Text"
+                    Placeholder="LastName"
+                    HeightRequest="30"
+                    TextColor="ForestGreen"
+                    Margin="0,-20,0,0"
+                    />
+            </Frame>
+
+            <Frame
+                HasShadow="True"
+                BackgroundColor="AliceBlue"
+                IsClippedToBounds="True"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="20,0,20,0"
+                HeightRequest="40"
+                CornerRadius="10">
+                <Entry
+                    Text="{Binding Direction}"
+                    Keyboard="Text"
+                    Placeholder="Direction"
+                    HeightRequest="30"
+                    TextColor="ForestGreen"
+                    Margin="0,-20,0,0"
+                    />
+            </Frame>
+
+            <Frame
+                HasShadow="True"
+                BackgroundColor="AliceBlue"
+                IsClippedToBounds="True"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="20,0,20,0"
+                HeightRequest="40"
+                CornerRadius="10">
+                <Entry
+                    Text="{Binding Phone}"
+                    Keyboard="Numeric"
+                    Placeholder="Phone"
+                    HeightRequest="30"
+                    TextColor="ForestGreen"
+                    Margin="0,-20,0,0"
+                    />
+            </Frame>
+
+            <Frame
+                HasShadow="True"
+                BackgroundColor="AliceBlue"
+                IsClippedToBounds="True"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="20,0,20,0"
+                HeightRequest="40"
+                CornerRadius="10">
+                <Entry
+                    Text="{Binding Email}"
+                    Keyboard="Text"
+                    Placeholder="Email"
+                    HeightRequest="30"
+                    TextColor="ForestGreen"
+                    Margin="0,-20,0,0"
+                    />
+            </Frame>
+
+            <Frame
+                HasShadow="True"
+                BackgroundColor="AliceBlue"
+                IsClippedToBounds="True"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="20,0,20,0"
+                HeightRequest="40"
+                CornerRadius="10">
+                <Entry
+                    Text="{Binding City}"
+                    Keyboard="Text"
+                    Placeholder="City"
+                    HeightRequest="30"
+                    TextColor="ForestGreen"
+                    Margin="0,-20,0,0"
+                    />
+            </Frame>
+
+            <Button Text="ADD"
+                    Margin="20,0,20,0"
+                    Command="{Binding addNewClient}"
+                    />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
